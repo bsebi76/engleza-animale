@@ -21,6 +21,27 @@
         <button onclick="verifica('incorect')">A. Unt</button>
         <button onclick="verifica('corect')">B. Fluture</button>
         <button onclick="verifica('incorect')">C. Muscă</button>
+        <div class="card" style="margin-top: 20px;">
+    <h1>Cum se traduce "Apple"?</h1>
+    <button onclick="verifica2('corect')">A. Măr</button>
+    <button onclick="verifica2('incorect')">B. Pară</button>
+    <button onclick="verifica2('incorect')">C. Portocală</button>
+    <p id="rezultat2"></p>
+</div>
+
+<script>
+    // Adăugăm și o funcție nouă pentru a doua întrebare
+    function verifica2(raspuns) {
+        let textRezultat = document.getElementById("rezultat2");
+        if (raspuns === 'corect') {
+            textRezultat.style.color = "green";
+            textRezultat.innerHTML = "🍎 Excelent!";
+        } else {
+            textRezultat.style.color = "red";
+            textRezultat.innerHTML = "❌ Mai încearcă!";
+        }
+    }
+</script>
     </div>
     <p id="rezultat"></p>
 </div>
@@ -40,3 +61,4 @@
 
 </body>
 </html>
+
